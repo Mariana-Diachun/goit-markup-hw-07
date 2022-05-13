@@ -12,12 +12,13 @@
     margin-top: 50px;
 }
 
-.activity__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .activity__item {
     position: relative;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
 .activity__img--toptext {

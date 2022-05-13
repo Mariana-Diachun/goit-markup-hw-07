@@ -2,12 +2,11 @@
     background-color: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
+    .container {
+        display: flex;
+        align-items: baseline;
 }
 
-.footer .container {
-    display: flex;
-    align-items: baseline;
-}
 
 .footer--flex {
     margin-right: 70px;
@@ -55,11 +54,10 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--hoover-duration) var(--hover-time-function);
-}
-
-.address__contact:hover,
-.address__contact:focus {
-    color: #FFFFFF;
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        }
 }
 
 .address__list {
@@ -70,7 +68,6 @@
 .address__item {
     margin-top: 9px;
 }
-
 
 .acept {
     display: block;
@@ -106,22 +103,16 @@
     border-radius: 50%;
     fill: #FFFFFF;
     transition: background-color var(--hoover-duration) var(--hover-time-function);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        }
 }
-
-.acept__link:hover,
-.acept__link:focus {
-    background-color: var(--accent-color);
-}
-
-
-
-
 
 .submit {
     display: block;
     margin-left: 93px;
 }
-
 
 .submit__title {
     font-weight: 700;
@@ -132,16 +123,13 @@
     color: var(--header-background-color);
 }
 
-
 .footer-form {
     margin-top: 20px;
 }
 
-
 .form-wrap {
     display: flex;
 }
-
 
 .input-email {
     display: block;
@@ -154,27 +142,20 @@
     border-radius: 4px;
     background-color: var(--footer-background);
     outline: none;
+    &::placeholder,
+    &:focus-visible {
+        font-size: 16px;
+        line-height: 1.25;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
-
-
-.input-email::placeholder,
-.input-email:focus-visible {
-    font-size: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-
 
 .button-submit {
     border: none;
-}
-
-.button-submit {
     display: inline-flex;
     align-items: center;
-    justify-content: baseline;
     min-width: 200px;
     height: 50px;
     font-weight: 700;
@@ -195,3 +176,4 @@
     fill: var(--header-background-color);
     margin-left: 10px;
 }
+

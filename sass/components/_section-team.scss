@@ -25,12 +25,11 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.team__item:not(:last-child) {
-    margin-right: 30px;
-}
 
 .team__card {
     padding-top: 30px;
@@ -68,13 +67,13 @@
     fill: var(--icons-color);
     transition: fill var(--hoover-duration) var(--hover-time-function),
         background-color var(--hoover-duration) var(--hover-time-function);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+            fill: #FFFFFF;
+    }
 }
 
-.social-links:hover,
-.social-links:focus {
-    background-color: var(--accent-color);
-    fill: #FFFFFF;
-}
 
 .social-list {
     display: flex;

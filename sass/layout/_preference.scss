@@ -2,7 +2,6 @@
     display: flex;
 }
 
-
 .preference__item:not(:last-child) {
     margin-right: 30px;
 }
@@ -27,9 +26,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
-
 }
-
 
 .preference__text {
     font-size: 14px;

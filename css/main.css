@@ -84,7 +84,6 @@ img {
   border-bottom: 1px solid #ececec;
   background-color: var(--header-background-color);
 }
-
 .header .container {
   display: flex;
   align-items: center;
@@ -92,9 +91,6 @@ img {
 
 .logo {
   text-decoration: none;
-}
-
-.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -124,13 +120,6 @@ img {
 
 .menu-list__link {
   text-decoration: none;
-}
-
-.menu-list__link.current {
-  color: var(--accent-color);
-}
-
-.menu-list__link {
   position: relative;
   display: block;
   padding-top: 32px;
@@ -141,6 +130,12 @@ img {
   letter-spacing: 0.02em;
   color: inherit;
   transition: color var(--hoover-duration) var(--hover-time-function);
+}
+.menu-list__link:hover, .menu-list__link:focus {
+  color: var(--accent-color);
+}
+.menu-list__link .current {
+  color: var(--accent-color);
 }
 
 .menu-list__link.current::after {
@@ -155,11 +150,6 @@ img {
   height: 4px;
 }
 
-.menu-list__link:hover,
-.menu-list__link:focus {
-  color: var(--accent-color);
-}
-
 /* ---------контакти---------- */
 .connect {
   display: flex;
@@ -172,9 +162,6 @@ img {
 
 .connect__link {
   text-decoration: none;
-}
-
-.connect__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -191,14 +178,12 @@ img {
   text-align: center;
   transition: color var(--hoover-duration) var(--hover-time-function);
 }
-
-.connect__link:hover,
-.connect__link:focus {
+.connect__link:hover, .connect__link:focus {
   color: var(--accent-color);
 }
 
-.connect__icon {
-  display: inline-block;
+.connent_icon {
+  display: flex;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -296,12 +281,11 @@ img {
   margin-top: 50px;
 }
 
-.activity__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .activity__item {
   position: relative;
+}
+.activity__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .activity__img--toptext {
@@ -346,7 +330,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .team__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -384,9 +367,7 @@ img {
   fill: var(--icons-color);
   transition: fill var(--hoover-duration) var(--hover-time-function), background-color var(--hoover-duration) var(--hover-time-function);
 }
-
-.social-links:hover,
-.social-links:focus {
+.social-links:hover, .social-links:focus {
   background-color: var(--accent-color);
   fill: #FFFFFF;
 }
@@ -432,9 +413,7 @@ img {
   fill: var(--icons-color);
   transition: border var(--hoover-duration) var(--hover-time-function), fill var(--hoover-duration) var(--hover-time-function);
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -477,9 +456,7 @@ img {
   border-radius: 4px;
   transition: color var(--hoover-duration) var(--hover-time-function), background-color var(--hoover-duration) var(--hover-time-function), box-shadow var(--hoover-duration) var(--hover-time-function), border var(--hoover-duration) var(--hover-time-function);
 }
-
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:hover, .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: #FFFFFF;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -494,9 +471,7 @@ img {
   display: block;
   transition: box-shadow var(--hoover-duration) var(--hover-time-function);
 }
-
-.galery-link:hover,
-.galery-link:focus {
+.galery-link:hover, .galery-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -568,7 +543,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer .container {
   display: flex;
   align-items: baseline;
@@ -620,9 +594,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--hoover-duration) var(--hover-time-function);
 }
-
-.address__contact:hover,
-.address__contact:focus {
+.address__contact:hover, .address__contact:focus {
   color: #FFFFFF;
 }
 
@@ -669,9 +641,7 @@ img {
   fill: #FFFFFF;
   transition: background-color var(--hoover-duration) var(--hover-time-function);
 }
-
-.acept__link:hover,
-.acept__link:focus {
+.acept__link:hover, .acept__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -709,9 +679,7 @@ img {
   background-color: var(--footer-background);
   outline: none;
 }
-
-.input-email::placeholder,
-.input-email:focus-visible {
+.input-email::placeholder, .input-email:focus-visible {
   font-size: 16px;
   line-height: 1.25;
   align-items: center;
@@ -721,9 +689,6 @@ img {
 
 .button-submit {
   border: none;
-}
-
-.button-submit {
   display: inline-flex;
   align-items: center;
   min-width: 200px;
@@ -798,9 +763,7 @@ img {
   fill: #000000;
   transition: fill var(--hoover-duration) var(--hover-time-function);
 }
-
-.close-btn-icon:hover,
-.close-btn-icon:focus {
+.close-btn-icon:hover, .close-btn-icon:focus {
   fill: var(--accent-color);
   outline: none;
 }
@@ -845,9 +808,7 @@ img {
   padding-left: 42px;
   transition: border-color var(--hoover-duration) var(--hover-time-function);
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -874,9 +835,7 @@ img {
   resize: none;
   outline: none;
 }
-
-.modal-coment:hover,
-.modal-coment:focus {
+.modal-coment:hover, .modal-coment:focus {
   border-color: var(--accent-color);
 }
 
@@ -895,15 +854,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-
-.contract {
-  color: var(--accent-color);
-}
-
-.check-icon {
-  fill: transparent;
-}
-
 .check-text span {
   width: 16px;
   height: 15px;
@@ -913,6 +863,14 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.contract {
+  color: var(--accent-color);
+}
+
+.check-icon {
+  fill: transparent;
 }
 
 .input-checkbox:checked + .check-text span {
@@ -948,8 +906,6 @@ img {
   margin-right: auto;
   transition: background-color var(--hoover-duration) var(--hover-time-function);
 }
-
-.modal-send:hover,
-.modal-send:focus {
+.modal-send:hover, .modal-send:focus {
   background-color: #188CE8;
 }/*# sourceMappingURL=main.css.map */

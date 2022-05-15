@@ -1,10 +1,9 @@
-.team {
-    background: #F5F4FA;
-    display: flex;
+.section--background {
+    background-color: #F5F4FA; 
 }
 
-
-.team--list {
+.team {
+    display: flex;
     margin-top: 50px;
 }
 
@@ -26,7 +25,7 @@
     padding-bottom: 30px;
 }
 
-.team__name {
+.team__title {
     text-align: center;
 
     font-weight: 500;
@@ -36,7 +35,7 @@
     margin-bottom: 10px;
 }
 
-.team__career {
+.team__text {
     text-align: center;
 
     font-size: 16px;

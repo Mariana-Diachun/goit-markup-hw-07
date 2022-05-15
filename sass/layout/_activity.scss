@@ -1,3 +1,7 @@
+.section--no-pad-top {
+    padding-top: 0;
+}
+
 .activity-list {
     display: flex;
     margin-top: 50px;
@@ -12,7 +16,7 @@
     }
 }
 
-.activity__img--toptext {
+.activity__toptext {
     position: absolute;
     bottom: 0;
     width: 100%;
